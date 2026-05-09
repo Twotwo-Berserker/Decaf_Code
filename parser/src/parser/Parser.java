@@ -19,6 +19,7 @@ import inter.SetElem;
 import inter.Stmt;
 import inter.Unary;
 import inter.While;
+import inter.For;
 
 import java.io.IOException;
 
@@ -121,19 +122,54 @@ public class Parser {
 	         Stmt.Enclosing = savedStmt;  // reset Stmt.Enclosing
 	         return whilenode;
 
-	      case Tag.DO:
-	         Do donode = new Do();
-	         savedStmt = Stmt.Enclosing; Stmt.Enclosing = donode;
-	         match(Tag.DO);
-	         s1 = stmt();
-	         match(Tag.WHILE); match('('); x = bool(); match(')'); match(';');
-	         donode.init(s1, x);
-	         Stmt.Enclosing = savedStmt;  // reset Stmt.Enclosing
-	         return donode;
+      case Tag.DO:
+         Do donode = new Do();
+         savedStmt = Stmt.Enclosing; Stmt.Enclosing = donode;
+         match(Tag.DO);
+         s1 = stmt();
+         match(Tag.WHILE); match('('); x = bool(); match(')'); match(';');
+         donode.init(s1, x);
+         Stmt.Enclosing = savedStmt;  // reset Stmt.Enclosing
+         return donode;
 
-	      case Tag.BREAK:
-	         match(Tag.BREAK); match(';');
-	         return new Break();
+      case Tag.FOR:
+         For fornode = new For();
+         savedStmt = Stmt.Enclosing; Stmt.Enclosing = fornode;
+         match(Tag.FOR); match('(');
+         // init expression (optional)
+         Expr initExpr;
+         if( look.tag == ';' ) {
+            initExpr = null;
+            move();  // consume ';'
+         } else {
+            initExpr = bool();
+            match(';');
+         }
+         // condition expression (optional)
+         Expr cond;
+         if( look.tag == ';' ) {
+            cond = null;
+            move();  // consume ';'
+         } else {
+            cond = bool();
+            match(';');
+         }
+         // update expression (optional)
+         Expr update;
+         if( look.tag == ')' ) {
+            update = null;
+         } else {
+            update = bool();
+         }
+         match(')');
+         s1 = stmt();
+         fornode.init(initExpr, cond, update, s1);
+         Stmt.Enclosing = savedStmt;  // reset Stmt.Enclosing
+         return fornode;
+
+      case Tag.BREAK:
+         match(Tag.BREAK); match(';');
+         return new Break();
 
 	      case '{':
 	         return block();
