@@ -1,3 +1,5 @@
+// 粘贴到test.txt再运行src/main/main/Main.java即可
+// 正确用例
 class Main {
   static void main(){
     class Fibonacci f = New Fibonacci(); //new a Fibonacci
@@ -13,5 +15,13 @@ class Fibonacci {
       return 1;
     }
     return get(i-1) + get(i-2);
+  }
+}
+
+// 错误用例
+class Main {
+  static void main(){
+    int @a= 567；
+    @a++;
   }
 }
