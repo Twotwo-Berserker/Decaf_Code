@@ -43,11 +43,77 @@ public class Parser {
 
 	   void move() throws IOException { look = lex.scan(); }
 
-	   void error(String s) { throw new Error("near line "+lex.line+": "+s); }
+	   void error(String s) { 
+	      throw new ParseException("Syntax error near line " + lex.line + ": " + s, lex.line, look); 
+	   }
+	   
+	   /** Custom exception for parse errors with detailed information */
+	   public static class ParseException extends RuntimeException {
+	      private final int line;
+	      private final Token token;
+	      
+	      public ParseException(String message, int line, Token token) {
+	         super(message);
+	         this.line = line;
+	         this.token = token;
+	      }
+	      
+	      public int getLine() { return line; }
+	      public Token getToken() { return token; }
+	      
+	      @Override
+	      public String toString() {
+	         return "ParseException: " + getMessage();
+	      }
+	   }
 
 	   void match(int t) throws IOException {
 	      if( look.tag == t ) move();
-	      else error("syntax error");
+	      else {
+	         String expected = getTokenName(t);
+	         String found = getTokenName(look.tag);
+	         error("expected '" + expected + "' but found '" + found + "'");
+	      }
+	   }
+	   
+	   /** Helper method to get human-readable token names */
+	   private String getTokenName(int tag) {
+	      switch(tag) {
+	         case Tag.BASIC: return "type";
+	         case Tag.ID: return "identifier";
+	         case Tag.NUM: return "number";
+	         case Tag.REAL: return "real number";
+	         case Tag.TRUE: return "true";
+	         case Tag.FALSE: return "false";
+	         case Tag.IF: return "if";
+	         case Tag.ELSE: return "else";
+	         case Tag.WHILE: return "while";
+	         case Tag.DO: return "do";
+	         case Tag.FOR: return "for";
+	         case Tag.BREAK: return "break";
+	         case Tag.AND: return "&&";
+	         case Tag.OR: return "||";
+	         case Tag.EQ: return "==";
+	         case Tag.NE: return "!=";
+	         case Tag.LE: return "<=";
+	         case Tag.GE: return ">=";
+	         case '+': return "+";
+	         case '-': return "-";
+	         case '*': return "*";
+	         case '/': return "/";
+	         case '!': return "!";
+	         case '=': return "=";
+	         case '<': return "<";
+	         case '>': return ">";
+	         case ';': return ";";
+	         case '{': return "{";
+	         case '}': return "}";
+	         case '(': return "(";
+	         case ')': return ")";
+	         case '[': return "[";
+	         case ']': return "]";
+	         default: return "token(" + tag + ")";
+	      }
 	   }
 
 	   public void program() throws IOException {  // program -> block
