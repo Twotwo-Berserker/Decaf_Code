@@ -15,8 +15,8 @@ public class While extends Stmt {
    public void gen(int b, int a) {}
    
    public void display() {
-	   emit("stmt : while begin");
-	   stmt.display();
-	   emit("stmt : while end");
+   emit("stmt : while begin");
+   stmt.display();
+   emit("stmt : while end");
    }
 }

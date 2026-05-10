@@ -1,0 +1,30 @@
+```
+# Compiled Java classes
+*.class
+
+# Build output directory
+parser/out/
+
+# Dependencies
+lib/
+libs/
+target/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Temporary files
+*.tmp
+```
