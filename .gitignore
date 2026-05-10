@@ -2,29 +2,9 @@
 # Compiled Java classes
 *.class
 
-# Build output directory
-parser/out/
+# Build output directories
+out/
 
-# Dependencies
-lib/
-libs/
-target/
-build/
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs
+# Original rules preserved
 *.log
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Temporary files
-*.tmp
 ```
