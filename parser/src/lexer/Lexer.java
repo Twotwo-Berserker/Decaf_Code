@@ -1,6 +1,10 @@
 package lexer;
 
 import java.io.IOException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Hashtable;
 
 import symbols.Type;
@@ -9,6 +13,9 @@ public class Lexer {
 	public static int line = 1;
 	char peek = ' ';
 	Hashtable words = new Hashtable();
+	File file = new File("test.txt");
+	Reader reader = null;
+	int readcount = 0;
 	void reserve(Word w)	{ words.put(w.lexeme, w); }
 	
 	public Lexer()	{
@@ -18,6 +25,23 @@ public class Lexer {
 		reserve(new Word("do", Tag.DO));
 		reserve(new Word("break", Tag.BREAK));
 		reserve(new Word("for", Tag.FOR));
+		reserve(new Word("class", Tag.BASIC));
+		reserve(new Word("void", Tag.BASIC));
+		reserve(new Word("int", Tag.BASIC));
+		reserve(new Word("double", Tag.BASIC));
+		reserve(new Word("bool", Tag.BASIC));
+		reserve(new Word("string", Tag.BASIC));
+		reserve(new Word("null", Tag.ID));
+		reserve(new Word("this", Tag.ID));
+		reserve(new Word("extends", Tag.ID));
+		reserve(new Word("return", Tag.ID));
+		reserve(new Word("new", Tag.ID));
+		reserve(new Word("NewArray", Tag.ID));
+		reserve(new Word("Print", Tag.ID));
+		reserve(new Word("ReadInteger", Tag.ID));
+		reserve(new Word("ReadLine", Tag.ID));
+		reserve(new Word("static", Tag.ID));
+		reserve(new Word("New", Tag.ID));
 		
 		reserve(Word.True); reserve(Word.False);
 		
@@ -26,7 +50,28 @@ public class Lexer {
 	}
 	
 	void readch() throws IOException {
-		peek = (char)System.in.read();
+		try {
+			reader = new InputStreamReader(new FileInputStream(file));
+			int temppeek;
+			readcount++;
+			for(int i=0;i<readcount;i++)
+			{
+				if((temppeek = reader.read()) != -1)
+				{
+					peek = (char)temppeek;
+				}
+				else
+				{
+					readcount = -1;
+					break;
+				}
+			}
+			reader.close();
+		}
+		catch (Exception e) {
+			readcount = -1;
+			e.printStackTrace();
+		}
 	}
 	boolean readch(char c) throws IOException{
 		readch();
