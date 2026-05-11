@@ -16,6 +16,7 @@ public class Lexer {
 	File file = new File("test.txt");
 	Reader reader = null;
 	int readcount = 0;
+	boolean initialized = false;
 	void reserve(Word w)	{ words.put(w.lexeme, w); }
 	
 	public Lexer()	{
@@ -31,6 +32,7 @@ public class Lexer {
 		reserve(new Word("double", Tag.BASIC));
 		reserve(new Word("bool", Tag.BASIC));
 		reserve(new Word("string", Tag.BASIC));
+		reserve(new Word("float", Tag.BASIC));
 		reserve(new Word("null", Tag.ID));
 		reserve(new Word("this", Tag.ID));
 		reserve(new Word("extends", Tag.ID));
@@ -47,30 +49,28 @@ public class Lexer {
 		
 		reserve(Type.Int); reserve(Type.Char);
 		reserve(Type.Bool); reserve(Type.Float);
+		
+		try {
+			reader = new InputStreamReader(new FileInputStream(file));
+			initialized = true;
+		} catch (Exception e) {
+			initialized = false;
+			e.printStackTrace();
+		}
 	}
 	
 	void readch() throws IOException {
-		try {
-			reader = new InputStreamReader(new FileInputStream(file));
-			int temppeek;
-			readcount++;
-			for(int i=0;i<readcount;i++)
-			{
-				if((temppeek = reader.read()) != -1)
-				{
-					peek = (char)temppeek;
-				}
-				else
-				{
-					readcount = -1;
-					break;
-				}
-			}
-			reader.close();
+		if (!initialized || reader == null) {
+			peek = (char)-1;
+			return;
 		}
-		catch (Exception e) {
-			readcount = -1;
-			e.printStackTrace();
+		int temppeek = reader.read();
+		if (temppeek == -1) {
+			peek = (char)-1;
+			try { reader.close(); } catch (Exception e) {}
+			reader = null;
+		} else {
+			peek = (char)temppeek;
 		}
 	}
 	boolean readch(char c) throws IOException{
