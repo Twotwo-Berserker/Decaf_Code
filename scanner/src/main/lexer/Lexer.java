@@ -112,13 +112,16 @@ public class Lexer {
 	public Token scan() throws IOException {
 	
 		for(;;readch()) {
-			if (peek == ' ' || peek == '\t')
+			if (readcount < 0) {  // EOF detected
+				return new Token(Tag.EOF);
+			}
+			if (peek == ' ' || peek == '\t' || peek == '\r')
 				continue;
 			else if (peek == '\n') 
 			{
 				line += 1;
 			}
-			else 
+			else
 				break;
 			if(readstatus != 3)
 			{				

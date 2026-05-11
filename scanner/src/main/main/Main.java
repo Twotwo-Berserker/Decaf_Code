@@ -12,7 +12,7 @@ public class Main {
 		lexer.startcheck();
 		char c;
 		do {
-			Token token=lexer.scan();
+			Token token = lexer.scan();
 			switch (token.tag) {
 				case 34:
 				case 400:
@@ -88,7 +88,8 @@ public class Main {
 				case 13:
 					break;
 				default:
-					System.out.println("ERR: invalid decaf character \'"+token.toString()+"\' , line:"+lexer.line);
+					if(token.tag != -1)
+						System.out.println("ERR: invalid decaf character \'"+token.toString()+"\' , line:"+lexer.line);
 					break;
 			}
 

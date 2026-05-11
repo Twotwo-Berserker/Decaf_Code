@@ -40,5 +40,6 @@ public class Tag {
 			READLINE = 291,
 			STRINGS = 300,
 			COMMENTS = 301,
-			CONNECT = 400;
+			CONNECT = 400,
+			EOF = -1;
 }

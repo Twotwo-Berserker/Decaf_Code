@@ -22,18 +22,6 @@
 }
 
 // ´íÎóÓÃÀı
-// 1
-{
-	    int i;int j;float v;float x;float[100] a;
-	    for(;true;){
-	    	for(;a[i]<v;)i == i + 1;  // ==Óï·¨´íÎó
-	    	for(;a[j]>v;)j = j + 1;
-	    	if(i>=j)break;
-	    	x=a[i];a[i]=a[j];a[j]=x;
-	    }
-}
-
-// 2
 {
 	    int i;int j;float v;float x;float[100] a;
 	    for(;true;){
