@@ -22,6 +22,7 @@
 }
 
 // ´íÎóÓÃÀı
+// 1
 {
 	    int i;int j;float v;float x;float[100] a;
 	    for(;true;){
@@ -32,6 +33,7 @@
 	    }
 }
 
+// 2
 {
 	    int i;int j;float v;float x;float[100] a;
 	    for(;true;){

@@ -21,7 +21,7 @@ class Fibonacci {
 // ´íÎóÓÃÀı
 class Main {
   static void main(){
-    int @a= 567£»
+    int @a= 567; //×Ö·û@Ê¶±ğ´íÎó
     @a++;
   }
 }
