@@ -84,6 +84,7 @@ public class Lexer {
 		for(;;readch()){
 			if(peek==' '||peek=='\t'||peek=='\r') continue;
 			else if(peek=='\n') line = line + 1;
+			else if(peek == (char)-1) return new Token(Tag.EOF);  // EOF
 			else break;
 		}
 		switch(peek){
