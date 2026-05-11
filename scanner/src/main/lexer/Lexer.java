@@ -6,7 +6,6 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.Reader; 
 import java.util.Hashtable;
-
 import javax.sound.sampled.BooleanControl;
 
 public class Lexer {
@@ -15,7 +14,7 @@ public class Lexer {
 	char peek = ' ';
 	short readstatus = 0;
 	Hashtable words = new Hashtable();
-	File file = new File("test.TXT");
+	File file = new File("test.txt");
 	Reader reader = null;
 	int readcount=0;
 
