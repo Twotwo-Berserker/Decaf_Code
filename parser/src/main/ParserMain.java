@@ -1,10 +1,6 @@
 package main;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
 
 import parser.Parser;
 import lexer.Lexer;
@@ -12,23 +8,16 @@ import lexer.Lexer;
 public class ParserMain {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test.txt");
-        Reader reader = new InputStreamReader(new FileInputStream(file));
-        Lexer lex = new Lexer(reader);
-        Parser parser = new Parser(lex);
-        
         // Phase 1: 语法分析
         System.out.println("语法分析");
-        parser.programPhase1();
-        
-        // Reset lexer for phase 2
-        file = new File("test.txt");
-        reader = new InputStreamReader(new FileInputStream(file));
-        lex = new Lexer(reader);
-        parser = new Parser(lex);
-        
-        // Phase 2: 中间代码生成
+        Lexer lex = new Lexer();
+        Parser parser = new Parser(lex);
+        parser.program_phase1();
+
+        // Reset for phase 2
         System.out.println("\n中间代码生成");
-        parser.programPhase2();
+        lex = new Lexer();
+        parser = new Parser(lex);
+        parser.program_phase2();
     }
 }

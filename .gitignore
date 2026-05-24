@@ -1,1 +1,24 @@
-Nothing needs to be ignored in this case, as only a single Java source file was added without any build artifacts, dependencies, or temporary files.
+```
+# Compiled Java classes
+*.class
+
+# Build directories
+bin/
+
+# Dependencies
+.gradle/
+target/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+.env.
+
+# Editors
+.vscode/
+.idea/
+```
