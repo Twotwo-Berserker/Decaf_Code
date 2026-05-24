@@ -45,7 +45,7 @@ public class Parser {
 	   void move() throws IOException { look = lex.scan(); }
 
 	   void error(String s) { 
-	      throw new ParseException("Syntax error near line " + lex.line + ": " + s, lex.line, look); 
+	      throw new ParseException("Syntax error near line " + Lexer.line + ": " + s, Lexer.line, look);
 	   }
 	   
 	   /** Custom exception for parse errors with detailed information */
@@ -128,15 +128,15 @@ public class Parser {
 	   // Phase 2: Intermediate Code Generation
 	   public void program_phase2() throws IOException {
 		   Stmt s = block();
-	      if (s == null) {
-	         error("syntax tree not built, run phase 1 first");
-	         return;
-	      }
-	      int begin = s.newlabel();
-	      int after = s.newlabel();
-	      s.emitlabel(begin);
-	      s.gen(begin, after);
-	      s.emitlabel(after);
+		   if (s == null) {
+			   error("syntax tree not built, run phase 1 first");
+			   return;
+		   }
+		   int begin = s.newlabel();
+		   int after = s.newlabel();
+		   s.emitlabel(begin);
+		   s.gen(begin, after);
+		   s.emitlabel(after);
 	   }
 
 	   Stmt block() throws IOException {  // block -> { decls stmts }
@@ -167,7 +167,7 @@ public class Parser {
 	   Type dims(Type p) throws IOException {
 	      match('[');  Token tok = look;  match(Tag.NUM);  match(']');
 	      if( look.tag == '[' )
-	      p = dims(p);
+	      	p = dims(p);
 	      return new Array(((Num)tok).value, p);
 	   }
 

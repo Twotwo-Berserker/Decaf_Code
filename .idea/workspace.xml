@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="提交">
+    <list default="true" id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="美化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/src/main/ParserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/ParserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/lexer/Lexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,56 +44,56 @@
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000008718727689" />
-      <entry key="S60" value="1.0018667633338256" />
-      <entry key="M2" value="1.0864037558860264" />
-      <entry key="M5" value="1.8626585674256109" />
-      <entry key="M10" value="2.8575810837550963" />
-      <entry key="M15" value="3.3987490125471" />
-      <entry key="M30" value="4.097577726176661" />
-      <entry key="H1" value="4.519986964627687" />
-      <entry key="H2" value="4.752325558760244" />
-      <entry key="H4" value="4.874184047332273" />
-      <entry key="D1" value="4.978750447275759" />
-      <entry key="W1" value="4.996957415323662" />
+      <entry key="S30" value="1.0000000209699729" />
+      <entry key="S60" value="1.000204792437317" />
+      <entry key="M2" value="1.0202382033990425" />
+      <entry key="M5" value="1.3188317557058917" />
+      <entry key="M10" value="1.8435203754471066" />
+      <entry key="M15" value="2.3227043636571105" />
+      <entry key="M30" value="3.7518714585387474" />
+      <entry key="H1" value="5.7011543159761136" />
+      <entry key="H2" value="7.420899901860813" />
+      <entry key="H4" value="8.57892256109437" />
+      <entry key="D1" value="9.742384622471269" />
+      <entry key="W1" value="9.962652932407805" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS500" value="7.229353156879432E-280" />
+      <entry key="S2" value="1.6397395059846674E-70" />
+      <entry key="S5" value="1.2187368536979136E-28" />
+      <entry key="S10" value="1.1039641542980226E-14" />
+      <entry key="S30" value="2.2277270371681854E-5" />
+      <entry key="S60" value="0.004822592013118807" />
+      <entry key="M2" value="0.07888396617727464" />
+      <entry key="M5" value="0.5022751633767154" />
+      <entry key="M10" value="0.9849211230437103" />
+      <entry key="M15" value="1.2422515746794698" />
+      <entry key="M30" value="1.5730604400831911" />
+      <entry key="H1" value="1.772835085546423" />
+      <entry key="H2" value="1.8827570272891145" />
+      <entry key="H4" value="1.9404319239543428" />
+      <entry key="D1" value="1.9899377543085748" />
+      <entry key="W1" value="1.9985592123349185" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.38923370801797E-8" />
-      <entry key="MS500" value="0.03747312230597227" />
-      <entry key="S2" value="0.43997699594786216" />
-      <entry key="S5" value="0.7200654746092189" />
-      <entry key="S10" value="0.8485667178302593" />
-      <entry key="S30" value="0.9467363601607259" />
-      <entry key="S60" value="0.9748517324211065" />
-      <entry key="M2" value="1.0723849826295784" />
-      <entry key="M5" value="1.8554834547039911" />
-      <entry key="M10" value="2.852997478825216" />
-      <entry key="M15" value="3.39533231978935" />
-      <entry key="M30" value="4.095636339946763" />
-      <entry key="H1" value="4.518945839463162" />
-      <entry key="H2" value="4.751785625653562" />
-      <entry key="H4" value="4.873909000886767" />
-      <entry key="D1" value="4.978703879684803" />
-      <entry key="W1" value="4.996950744739077" />
+      <entry key="MS100" value="4.1922140451062167E-4" />
+      <entry key="MS500" value="0.21110022185594549" />
+      <entry key="S2" value="0.6778321634000005" />
+      <entry key="S5" value="0.8559509316538902" />
+      <entry key="S10" value="0.925176162497667" />
+      <entry key="S30" value="0.9744313725884057" />
+      <entry key="S60" value="0.9921103010542223" />
+      <entry key="M2" value="1.0923331552620177" />
+      <entry key="M5" value="1.8176312248550663" />
+      <entry key="M10" value="2.8262147024934756" />
+      <entry key="M15" value="3.5631899776786398" />
+      <entry key="M30" value="5.32361455570718" />
+      <entry key="H1" value="7.473025431978199" />
+      <entry key="H2" value="9.303038474501104" />
+      <entry key="H4" value="10.518999038802011" />
+      <entry key="D1" value="11.732255370149854" />
+      <entry key="W1" value="11.961202361984828" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -107,30 +108,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;应用程序.ParserMain.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "应用程序.ParserMain.executor": "Run",
+    "应用程序.ScannerMain.executor": "Run"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="应用程序.ParserMain">
     <configuration name="ParserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ParserMain" />
       <module name="parser" />
@@ -144,9 +146,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScannerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ScannerMain" />
+      <module name="scanner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.ParserMain" />
+        <item itemvalue="应用程序.ScannerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779616005235</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="美化">
+      <option name="closed" value="true" />
+      <created>1779619741735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779619741735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="美化" />
+    <option name="LAST_COMMIT_MESSAGE" value="美化" />
   </component>
 </project>

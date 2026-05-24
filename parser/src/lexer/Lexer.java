@@ -81,12 +81,17 @@ public class Lexer {
 	}
 	
 	public Token scan() throws IOException{
+		if(peek == (char)-1) return new Token(Tag.EOF);  // 文件是空的
+
 		for(;;readch()){
 			if(peek==' '||peek=='\t'||peek=='\r') continue;
-			else if(peek=='\n') line = line + 1;
-			else if(peek == (char)-1) return new Token(Tag.EOF);  // EOF
+			else if(peek=='\n') {
+				line = line + 1;
+				continue;
+			}
 			else break;
 		}
+
 		switch(peek){
 		case '&':
 			if(readch('&')) return Word.and; else return new Token('&');
