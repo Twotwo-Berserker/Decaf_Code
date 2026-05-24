@@ -18,10 +18,10 @@ class Fibonacci {
   }
 }
 
-// 错误用例
+// 错误用例（字符@识别错误）
 class Main {
   static void main(){
-    int @a= 567; //字符@识别错误
+    int @a= 567;
     @a++;
   }
 }
