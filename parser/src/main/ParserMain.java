@@ -8,16 +8,15 @@ import lexer.Lexer;
 public class ParserMain {
 
     public static void main(String[] args) throws IOException {
-        // Phase 1: 语法分析
-        System.out.println("语法分析");
         Lexer lex = new Lexer();
         Parser parser = new Parser(lex);
+        
+        // Phase 1: 语法分析
+        System.out.println("语法分析");
         parser.program_phase1();
-
-        // Reset for phase 2
+        
+        // Phase 2: 中间代码生成
         System.out.println("\n中间代码生成");
-        lex = new Lexer();
-        parser = new Parser(lex);
         parser.program_phase2();
     }
 }
