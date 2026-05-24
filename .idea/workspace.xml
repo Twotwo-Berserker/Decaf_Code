@@ -1,15 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="62ec0637-f33d-4e5b-bd34-151a9e6bb905" name="更改" comment="两个实验合并">
-      <change afterPath="$PROJECT_DIR$/.idea/Decaf_Code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+    <list default="true" id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Decaf_Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Decaf_Code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/ParserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/ParserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Access.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/And.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Arith.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Break.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Do.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Else.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Expr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/For.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/If.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Logical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Not.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Op.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Rel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Seq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/SetElem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Stmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/Unary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/inter/While.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Lexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Num.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Real.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/lexer/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/main/ParserMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/symbols/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/symbols/Env.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser1/src/symbols/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Access.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/And.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Arith.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Break.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Do.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Else.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Expr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/For.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Id.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/If.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Logical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Not.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Op.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Or.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Rel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Seq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/SetElem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Stmt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/Unary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/inter/While.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Lexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Num.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Real.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Tag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/lexer/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/main/ParserMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/parser/Parser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/symbols/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/symbols/Env.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser2/src/symbols/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/scanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Num.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Num.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Real.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Real.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/lexer/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/lexer/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanner/src/main/main/ScannerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanner/src/main/ScannerMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,122 +91,55 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="88" />
+    <option name="cachedIndexableFilesCount" value="103" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Twotwo-Berserker&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Twotwo-Berserker"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Twotwo-Berserker/Decaf_Code.git&quot;,
-    &quot;accountId&quot;: &quot;63be727f-15dd-4880-aa4f-e19000adaf77&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Twotwo-Berserker/Decaf_Code.git",
+    "accountId": "63be727f-15dd-4880-aa4f-e19000adaf77"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="NextEditCompletionFeaturesState">
-    <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000002166695872" />
-      <entry key="S2" value="1.0215749346538172" />
-      <entry key="S5" value="1.2155657679439655" />
-      <entry key="S10" value="1.4642906339075044" />
-      <entry key="S30" value="1.7805396061594316" />
-      <entry key="S60" value="2.016337056961622" />
-      <entry key="M2" value="2.5776429533680285" />
-      <entry key="M5" value="3.5914258142439643" />
-      <entry key="M10" value="4.1895659875225295" />
-      <entry key="M15" value="4.432809229919576" />
-      <entry key="M30" value="4.7020151106951715" />
-      <entry key="H1" value="4.847222585864758" />
-      <entry key="H2" value="4.922640530562104" />
-      <entry key="H4" value="4.96107444014776" />
-      <entry key="D1" value="4.993477994964796" />
-      <entry key="W1" value="4.999067438724126" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
-    </decayedSelected>
-    <decayedShown>
-      <entry key="MS100" value="0.8827029962906549" />
-      <entry key="MS500" value="0.9753556210210352" />
-      <entry key="S2" value="1.0137652430300146" />
-      <entry key="S5" value="1.2065693808760454" />
-      <entry key="S10" value="1.4559856844722343" />
-      <entry key="S30" value="1.7761749588493503" />
-      <entry key="S60" value="2.0138291813275795" />
-      <entry key="M2" value="2.5762092752431194" />
-      <entry key="M5" value="3.5907514114546166" />
-      <entry key="M10" value="4.189200892449603" />
-      <entry key="M15" value="4.432558390086073" />
-      <entry key="M30" value="4.701885600772471" />
-      <entry key="H1" value="4.847156733138538" />
-      <entry key="H2" value="4.922607319769497" />
-      <entry key="H4" value="4.961057762357482" />
-      <entry key="D1" value="4.993475205167347" />
-      <entry key="W1" value="4.999067039931215" />
-    </decayedShown>
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="3DaDbUiTuFIHiGKA0FSs9A9OAd0" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="3EAK62Eq4euco0A2QktWPd0aEGY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.ParserMain.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.ScannerMain.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "应用程序.ParserMain.executor": "Run"
   }
-}</component>
-  <component name="RunManager" selected="应用程序.ScannerMain">
+}]]></component>
+  <component name="RunManager">
     <configuration name="ParserMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.ParserMain" />
       <module name="parser" />
@@ -146,22 +153,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.ScannerMain" />
-      <module name="scanner" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.ScannerMain" />
         <item itemvalue="应用程序.ParserMain" />
       </list>
     </recent_temporary>
@@ -176,40 +169,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="62ec0637-f33d-4e5b-bd34-151a9e6bb905" name="更改" comment="" />
-      <created>1778511363132</created>
+      <changelist id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="" />
+      <created>1779615755199</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778511363132</updated>
-      <workItem from="1778511375425" duration="142000" />
+      <updated>1779615755199</updated>
     </task>
-    <task id="LOCAL-00001" summary="两个实验合并">
-      <option name="closed" value="true" />
-      <created>1779612673857</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1779612673857</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="两个实验合并" />
-    <option name="LAST_COMMIT_MESSAGE" value="两个实验合并" />
   </component>
 </project>

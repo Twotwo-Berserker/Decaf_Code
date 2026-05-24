@@ -12,9 +12,7 @@ import lexer.Lexer;
 public class ParserMain {
 
     public static void main(String[] args) throws IOException {
-        File file = new File("test.txt");
-        Reader reader = new InputStreamReader(new FileInputStream(file));
-        Lexer lex = new Lexer(reader);
+        Lexer lex = new Lexer();
         Parser parser = new Parser(lex);
         
         // Phase 1: 语法分析
@@ -22,9 +20,7 @@ public class ParserMain {
         parser.programPhase1();
         
         // Reset lexer for phase 2
-        file = new File("test.txt");
-        reader = new InputStreamReader(new FileInputStream(file));
-        lex = new Lexer(reader);
+        lex = new Lexer();
         parser = new Parser(lex);
         
         // Phase 2: 中间代码生成
