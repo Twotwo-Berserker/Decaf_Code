@@ -12,11 +12,11 @@ public class ParserMain {
         Parser parser = new Parser(lex);
         
         // Phase 1: 语法分析
-        System.out.println("语法分析");
+        System.out.println("Parsing:");
         parser.program_phase1();
         
         // Phase 2: 中间代码生成
-        System.out.println("\n中间代码生成");
+        System.out.println("\nIntermediate Code:");
         parser.program_phase2();
     }
 }
