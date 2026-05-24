@@ -44,6 +44,8 @@ public class Parser {
 
 	   void move() throws IOException { look = lex.scan(); }
 
+	   public void reset() throws IOException { lex.reset(); move(); }
+
 	   void error(String s) { 
 	      throw new ParseException("Syntax error near line " + Lexer.line + ": " + s, Lexer.line, look);
 	   }

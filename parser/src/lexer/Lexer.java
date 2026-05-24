@@ -59,6 +59,18 @@ public class Lexer {
 		}
 	}
 	
+	public void reset() throws IOException {
+		if (reader != null) {
+			try { reader.close(); } catch (Exception e) {}
+			reader = null;
+		}
+		peek = ' ';
+		line = 1;
+		readcount = 0;
+		reader = new InputStreamReader(new FileInputStream(file));
+		initialized = true;
+	}
+
 	void readch() throws IOException {
 		if (!initialized || reader == null) {
 			peek = (char)-1;
@@ -81,10 +93,16 @@ public class Lexer {
 	}
 	
 	public Token scan() throws IOException{
-		if(peek == (char)-1) return new Token(Tag.EOF);  // 文件是空的
+		if(peek == (char)-1) return new Token(Tag.EOF);
 
 		for(;;readch()){
-			if(peek==' '||peek=='\t'||peek=='\r') continue;
+			if(peek==' '||peek=='\t') continue;
+			else if(peek=='\r'){
+				line = line + 1;
+				readch();
+				if(peek == '\n') continue;
+				break;
+			}
 			else if(peek=='\n') {
 				line = line + 1;
 				continue;

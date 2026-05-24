@@ -17,6 +17,7 @@ public class ParserMain {
         
         // Phase 2: 中间代码生成
         System.out.println("\nIntermediate Code:");
+        parser.reset();
         parser.program_phase2();
     }
 }

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd \"C:\\\\Users\\\\张俊仁\\\\Desktop\\\\大二 作业\\\\编译技术\\\\Lab\\\\lab3\\\\Decaf_Code\\\\test.txt\")",
+      "Bash(javac -encoding UTF-8 -cp \"parser/src;src\" parser/src/main/ParserMain.java -d out)",
+      "Bash(java -cp \"parser/src;src;out\" main.ParserMain)"
+    ]
+  }
+}

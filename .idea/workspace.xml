@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="美化">
+    <list default="true" id="bf78124f-17e7-4559-9b18-ff81de052a51" name="更改" comment="debuging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/src/main/ParserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/main/ParserMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/src/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/parser/src/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="108" />
+    <option name="cachedIndexableFilesCount" value="109" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,65 +39,65 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0000000209699729" />
-      <entry key="S60" value="1.000204792437317" />
-      <entry key="M2" value="1.0202382033990425" />
-      <entry key="M5" value="1.3188317557058917" />
-      <entry key="M10" value="1.8435203754471066" />
-      <entry key="M15" value="2.3227043636571105" />
-      <entry key="M30" value="3.7518714585387474" />
-      <entry key="H1" value="5.7011543159761136" />
-      <entry key="H2" value="7.420899901860813" />
-      <entry key="H4" value="8.57892256109437" />
-      <entry key="D1" value="9.742384622471269" />
-      <entry key="W1" value="9.962652932407805" />
+      <entry key="MS100" value="1.0000000000641394" />
+      <entry key="MS500" value="1.0097246706034717" />
+      <entry key="S2" value="1.544131150330434" />
+      <entry key="S5" value="2.46560572928873" />
+      <entry key="S10" value="3.0848353268040793" />
+      <entry key="S30" value="3.6545900087198486" />
+      <entry key="S60" value="3.8477349687884153" />
+      <entry key="M2" value="4.075311853077905" />
+      <entry key="M5" value="4.601494124069991" />
+      <entry key="M10" value="5.264017981812746" />
+      <entry key="M15" value="5.811264890090697" />
+      <entry key="M30" value="7.318228334189785" />
+      <entry key="H1" value="9.36346060149567" />
+      <entry key="H2" value="11.198291760255827" />
+      <entry key="H4" value="12.449403558471449" />
+      <entry key="D1" value="13.717734188981405" />
+      <entry key="W1" value="13.95904836730872" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="7.229353156879432E-280" />
-      <entry key="S2" value="1.6397395059846674E-70" />
-      <entry key="S5" value="1.2187368536979136E-28" />
-      <entry key="S10" value="1.1039641542980226E-14" />
-      <entry key="S30" value="2.2277270371681854E-5" />
-      <entry key="S60" value="0.004822592013118807" />
-      <entry key="M2" value="0.07888396617727464" />
-      <entry key="M5" value="0.5022751633767154" />
-      <entry key="M10" value="0.9849211230437103" />
-      <entry key="M15" value="1.2422515746794698" />
-      <entry key="M30" value="1.5730604400831911" />
-      <entry key="H1" value="1.772835085546423" />
-      <entry key="H2" value="1.8827570272891145" />
-      <entry key="H4" value="1.9404319239543428" />
-      <entry key="D1" value="1.9899377543085748" />
-      <entry key="W1" value="1.9985592123349185" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="8.54165244487264E-118" />
+      <entry key="S5" value="1.488047376456673E-47" />
+      <entry key="S10" value="3.8575217132181186E-24" />
+      <entry key="S30" value="1.5690849065879344E-8" />
+      <entry key="S60" value="1.2798903278090495E-4" />
+      <entry key="M2" value="0.01285093880370974" />
+      <entry key="M5" value="0.24306372568937593" />
+      <entry key="M10" value="0.6851579086458819" />
+      <entry key="M15" value="0.9752943423586415" />
+      <entry key="M30" value="1.393825751026945" />
+      <entry key="H1" value="1.668783032367898" />
+      <entry key="H2" value="1.8266697880401566" />
+      <entry key="H4" value="1.9113107186177758" />
+      <entry key="D1" value="1.984928980123001" />
+      <entry key="W1" value="1.9978397966409929" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.1922140451062167E-4" />
-      <entry key="MS500" value="0.21110022185594549" />
-      <entry key="S2" value="0.6778321634000005" />
-      <entry key="S5" value="0.8559509316538902" />
-      <entry key="S10" value="0.925176162497667" />
-      <entry key="S30" value="0.9744313725884057" />
-      <entry key="S60" value="0.9921103010542223" />
-      <entry key="M2" value="1.0923331552620177" />
-      <entry key="M5" value="1.8176312248550663" />
-      <entry key="M10" value="2.8262147024934756" />
-      <entry key="M15" value="3.5631899776786398" />
-      <entry key="M30" value="5.32361455570718" />
-      <entry key="H1" value="7.473025431978199" />
-      <entry key="H2" value="9.303038474501104" />
-      <entry key="H4" value="10.518999038802011" />
-      <entry key="D1" value="11.732255370149854" />
-      <entry key="W1" value="11.961202361984828" />
+      <entry key="MS100" value="0.9794202976480284" />
+      <entry key="MS500" value="1.0054828828163231" />
+      <entry key="S2" value="1.5420172108305716" />
+      <entry key="S5" value="2.4641175592525477" />
+      <entry key="S10" value="3.0838850639836064" />
+      <entry key="S30" value="3.6541933369593305" />
+      <entry key="S60" value="3.8473217991380415" />
+      <entry key="M2" value="4.086955262827266" />
+      <entry key="M5" value="4.842834677733944" />
+      <entry key="M10" value="5.947606129712785" />
+      <entry key="M15" value="6.7851589539742205" />
+      <entry key="M30" value="8.71087992002658" />
+      <entry key="H1" value="11.031332779077111" />
+      <entry key="H2" value="13.024359785200314" />
+      <entry key="H4" value="14.360363298971736" />
+      <entry key="D1" value="15.702596186732611" />
+      <entry key="W1" value="15.956878364084005" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -113,6 +113,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -125,9 +126,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "应用程序.ParserMain.executor": "Run",
     "应用程序.ScannerMain.executor": "Run"
   }
@@ -198,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779619741735</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="debuging">
+      <option name="closed" value="true" />
+      <created>1779624034980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779624034980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +240,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
     <MESSAGE value="美化" />
-    <option name="LAST_COMMIT_MESSAGE" value="美化" />
+    <MESSAGE value="debuging" />
+    <option name="LAST_COMMIT_MESSAGE" value="debuging" />
   </component>
 </project>
