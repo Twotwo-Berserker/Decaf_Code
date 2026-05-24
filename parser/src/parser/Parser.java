@@ -119,20 +119,23 @@ public class Parser {
 
 	   // Phase 1: Syntax Analysis - build and display the syntax tree
 	   public void program_phase1() throws IOException {
-	      Stmt s = block();
+	      syntaxTree = block();
 	      // display the syntax tree
 	      // only display the stmts, without expr
-	      s.display();
+	      syntaxTree.display();
 	   }
 
 	   // Phase 2: Intermediate Code Generation
 	   public void program_phase2() throws IOException {
-	      Stmt s = block();
-	      int begin = s.newlabel();  
-	      int after = s.newlabel();
-	      s.emitlabel(begin); 
-	      s.gen(begin, after); 
-	      s.emitlabel(after);
+	      if (syntaxTree == null) {
+	         error("syntax tree not built, run phase 1 first");
+	         return;
+	      }
+	      int begin = syntaxTree.newlabel();  
+	      int after = syntaxTree.newlabel();
+	      syntaxTree.emitlabel(begin); 
+	      syntaxTree.gen(begin, after); 
+	      syntaxTree.emitlabel(after);
 	   }
 
 	   Stmt block() throws IOException {  // block -> { decls stmts }
